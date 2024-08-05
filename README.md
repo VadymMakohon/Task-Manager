@@ -1,5 +1,8 @@
-# Task-Manager
-A simple task manager application to keep track of to-do items.
+# Task Manager
+
+A simple yet effective task manager application designed to help you keep track of your to-do items. This application allows you to easily manage your tasks with features such as adding new tasks, marking them as completed, removing tasks, and filtering tasks based on their completion status. 
+
+Whether you're a student managing homework, a professional organizing your work assignments, or anyone needing to keep track of daily activities, this Task Manager is the perfect tool to stay organized and productive.
 
 ## Features
 

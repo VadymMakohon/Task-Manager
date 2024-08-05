@@ -9,7 +9,7 @@ body {
 }
 
 header {
-    background-color: #079ce1; /*Blue background for the headder */
+    background: linear-gradient(90deg, #079ce1, #280a82); /* Blue to violet gradient */
     color: white;
     padding: 1rem 0;
     width: 100%;
@@ -20,9 +20,9 @@ main {
     padding: 2rem;
     width: 100%;
     max-width: 600px;
-    background-color: white; /* White background for the main section */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-    border-radius: 8px; /* Rounded corners */
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
     margin-top: 2rem;
 }
 
@@ -34,22 +34,30 @@ main {
 }
 
 .task-form input, .task-form button {
-    padding: 0.5rem;
+    padding: 0.75rem; /* Increased padding */
     font-size: 1rem;
-    border: 1px solid #ccc; /* Light gray border */
-    border-radius: 4px; /* Slightly rounded corners */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none; /* Remove default outline */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+.task-form input:focus {
+    border-color: #079ce1; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(7, 156, 225, 0.5); /* Blue shadow on focus */
 }
 
 .task-form button {
-    background-color: #280a82; /* Button background */
+    background-color: #280a82;
     color: white;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
 .task-form button:hover {
     background-color: #755fe1; /* Lighter on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .task-list ul {
@@ -58,7 +66,7 @@ main {
 }
 
 .task-list li {
-    background-color: #f9f9f9; /* Light gray background for tasks */
+    background-color: #f9f9f9;
     margin-bottom: 0.5rem;
     padding: 1rem;
     display: flex;
@@ -66,23 +74,24 @@ main {
     align-items: center;
     border: 1px solid #ccc;
     border-radius: 4px;
-    transition: background-color 0.3s; /* Smooth transition */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
 }
 
 .task-list li.completed {
     text-decoration: line-through;
-    color: #888; /* Gray color for completed tasks */
-    background-color: #e0e0e0; /* Slightly darker gray background for completed tasks */
+    color: #888;
+    background-color: #e0e0e0;
 }
 
 .task-list li:hover {
     background-color: #e8f5e9; /* Light green background on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
 }
 
 footer {
     margin-top: auto;
     padding: 1rem 0;
-    background-color: #079ce1; /*Blue background for the footer */
+    background: linear-gradient(90deg, #280a82, #079ce1); /* Violet to blue gradient */
     color: white;
     width: 100%;
     text-align: center;

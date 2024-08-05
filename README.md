@@ -19,11 +19,11 @@ To run this project, you will need a modern web browser and a code editor (like 
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/yourusername/task-manager.git
+   git clone https://github.com/VadymMakohon/task-manager.git
    
 2. Navigate to the project directory:
 
-  '''bash
+  ```bash
   cd task-manager
   
 3. Open index.html in your web browser to view the application.
@@ -38,8 +38,8 @@ Add a New Task:
 - Remove a Task: Click the "Remove" button next to a task to remove it from the list.
 - Filter Tasks: Use the filter options to view all tasks, only completed tasks, or only pending tasks.
 
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request.
+# Contributors
+- [Vadym Makohon](https://github.com/VadymMakohon)
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.

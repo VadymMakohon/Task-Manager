@@ -36,6 +36,20 @@ main {
 .task-form input, .task-form button {
     padding: 0.5rem;
     font-size: 1rem;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+.task-form button {
+    background-color: #280a82; /* Button background */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.task-form button:hover {
+    background-color: #755fe1; /* Lighter on hover */
 }
 
 .task-list ul {
@@ -44,18 +58,25 @@ main {
 }
 
 .task-list li {
-    background-color: white;
+    background-color: #f9f9f9; /* Light gray background for tasks */
     margin-bottom: 0.5rem;
     padding: 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: background-color 0.3s; /* Smooth transition */
 }
 
 .task-list li.completed {
     text-decoration: line-through;
-    color: grey;
+    color: #888; /* Gray color for completed tasks */
+    background-color: #e0e0e0; /* Slightly darker gray background for completed tasks */
+}
+
+.task-list li:hover {
+    background-color: #e8f5e9; /* Light green background on hover */
 }
 
 footer {
